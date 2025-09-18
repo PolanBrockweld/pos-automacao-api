@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run REST tests
+    - name: Run Rest tests
       run: npm run test-rest
 
     - name: Run GraphQL tests
