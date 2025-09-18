@@ -19,4 +19,5 @@ app.post('/auth/login', authController.login);
 app.get('/CadastroAluno', cadastroAlunoController.listar);
 app.post('/CadastroAluno', authenticateToken, cadastroAlunoController.criar);
 
+// Exporta apenas o app, sem listen()
 module.exports = app;
