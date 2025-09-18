@@ -1,7 +1,7 @@
 const request = require('supertest');
 const { expect } = require('chai');
 const http = require('http');
-const appPromise = require('../app');
+const appPromise = require('../../graphql/app');
 
 let server;
 let address;

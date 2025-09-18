@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "start:graphql": "node graphql/server.js",
-    "test": "mocha tests/*.js graphql/tests/*.js"
+    "start-graphql": "node graphql/server.js",
+    "test-rest": "mocha tests/rest/*.js",
+    "test-graphql": "mocha tests/graphql/*.js graphql/tests/*.js"
   },
   "author": "PolanBrockweld",
   "license": "MIT",
