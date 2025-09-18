@@ -1,5 +1,6 @@
 const app = require('./app');
 const PORT = process.env.PORT || 3000;
+// O listen fica apenas aqui
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Servidor REST rodando na porta ${PORT}`);
 });
