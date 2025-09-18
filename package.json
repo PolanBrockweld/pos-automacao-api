@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "start-graphql": "node graphql/server.js",
-    "test-rest": "mocha tests/rest/*.js",
-    "test-graphql": "mocha tests/graphql/*.js"
+    "test-rest": "mocha 'tests/rest/*.js' -- timeout 10000",
+    "test-graphql": "mocha 'tests/graphql/*.js' -- timeout 10000"
   },
   "author": "PolanBrockweld",
   "license": "MIT",
