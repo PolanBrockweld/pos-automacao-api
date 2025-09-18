@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "teste" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "teste" ]
   workflow_dispatch:
 
 jobs:
@@ -15,17 +15,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Use Node.js 20.x
-      uses: actions/setup-node@v4
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
       with:
-        node-version: '20.x'
+        node-version: '18.x'
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
-    - name: Run REST tests
+    - name: Set permissions for Mocha
+      run: chmod +x node_modules/.bin/mocha
+    - name: Run Rest tests
       run: npm run test-rest
-
     - name: Run GraphQL tests
       run: npm run test-graphql
 
