@@ -7,7 +7,7 @@
     "start": "node server.js",
     "start-graphql": "node graphql/server.js",
     "test-rest": "mocha tests/rest/*.js",
-    "test-graphql": "mocha tests/graphql/*.js graphql/tests/*.js"
+    "test-graphql": "mocha tests/graphql/*.js"
   },
   "author": "PolanBrockweld",
   "license": "MIT",
